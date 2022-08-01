@@ -85,51 +85,268 @@ At a very high level, there are two types of data types in JavaScript
 2. Reference data types: Arrays and Objects
 */
 
-var arr = [1, 2, "bablu", 4, 5]
-// console.log(arr)
+//4. A). How to defin the array in it
+        var arr = [1, 2, "bablu", 4, 5]
+        // to find the size/length of the array by using the "arr.length" function
+        // console.log(arr, arr.length) 
+        // if you pirint the array as console.log(arr) so print the array in  [1, 2, "bablu", 4, 5] manner 
+        //some methods of the array we can do on js
+                        let myArr = ["Fan", "Camera", 34, null, true];
+                        // console.log(myArr.length);
+                        // myArr.pop();  //Removes the last element of an array, and returns that element
+                        // myArr.push("harry")  //Adds new elements to the end of an array, and returns the new length
+                        // myArr.shift()    //Removes the first element of an array, and returns that element
+                        // const newLen = myArr.unshift("Harry")  //
+                        // console.log(newLen);
+                        // console.log(myArr);
 
 
 // 5. Operators in JavaScript
-          // Arithmetic Operators
-          var a = 100;
-          var b = 10;
-          // console.log("The value of a + b is ", a+b);
-          // console.log("The value of a - b is ", a-b);
-          // console.log("The value of a * b is ", a*b);
-          // console.log("The value of a / b is ", a/b);
+          //a: Arithmetic Operators
+                          var a = 100;
+                          var b = 10;
+                          // console.log("The value of a + b is ", a+b);
+                          // console.log("The value of a - b is ", a-b);
+                          // console.log("The value of a * b is ", a*b);
+                          // console.log("The value of a / b is ", a/b);
 
-          // Assignment Operators
-          var c = b;
-          // c += 2;
-          // c -= 2; // c = c - 2;
-          // c *= 2;
-          // c /= 2;
-          // console.log(c);
+          //b: Assignment Operators : this types of the aperators are used for the assigen the new values to the varibles 
+                          var c = b;
+                          // c += 2;
+                          // c -= 2; // its mean is :-  c = c - 2;
+                          // c *= 2;
+                          // c /= 2;
+                          // console.log(c);
 
-          // Comparison Operators
-          var x = 34;
-          var y = 56;
-          // console.log(x == y);
-          // console.log(x >= y);
-          // console.log(x <= y);
-          // console.log(x > y);
-          // console.log(x < y);
+          //c: Comparison Operators : this types is used to compare the two variables by using the { >, <, >=, <=} operators 
+                          var x = 34;
+                          var y = 56;
+                          // console.log(x == y);  //o/p is flase
+                          // console.log(x >= y);   //o/p is flase
+                          // console.log(x <= y); //o/p is true
+                          // console.log(x > y); //o/p is flase
+                          // console.log(x < y); //o/p is true
 
-          // Logical Operators
+          //d: Logical Operators
+                    //i: Logical and
+                          // console.log(true && true)   //o/p is true
+                          // console.log(true && false)    //o/p is flase
+                          // console.log(false && true)
+                          // console.log(false && false)
 
-          // Logical and
-          // console.log(true && true)
-          // console.log(true && false)
-          // console.log(false && true)
-          // console.log(false && false)
+                    //ii: Logical or
+                          // console.log(true || true)
+                          // console.log(true || false)
+                          // console.log(false || true)
+                          // console.log(false || false)
 
-          // Logical or
-          // console.log(true || true)
-          // console.log(true || false)
-          // console.log(false || true)
-          // console.log(false || false)
+                    //iii: Logical not
+                          // console.log(!false);
+                          // console.log(!true);
 
-          // Logical not
-          // console.log(!false);
-      
-      // console.log(!true);
+
+
+//6. Function in JavaScript
+        // In js the function is initalise with the keyword "function" with this you no need to return the value or just to void it 
+            function avg(a, b) {
+                c = (a + b) / 2;
+                return c;
+            }
+                      //In the programming languages the functions are based on the principale of  "DRY = Do not repeat yourself" 
+            c1 = avg(4, 6);
+            c2 = avg(14, 16);
+            console.log(c1, c2); //o/p 
+
+
+
+//7. Conditionals in JavaScript
+                /*
+                var age = 41;
+                // Single if statement
+                if(age > 18){
+                    console.log('You can drink rasna water');
+                }
+                // if - else statement
+                // if(age > 18){
+                //     console.log('You can drink rasna water');
+                // }
+                // else{
+                //     console.log('You cannot drink rasna water');
+                // }
+
+                age = 25;
+                // if-else Ladder 
+                if(age > 32){
+                    console.log("You are not a kid");
+                }
+                else if(age >26){
+                    console.log("Bachhe nahi rahe");
+                }
+                else if(age >22){
+                    console.log("Yes Bachhe nahi rahe");
+                }
+                else if(age >18){
+                    console.log("18 Bachhe nahi rahe");
+                }
+                else{
+                    console.log("Bachhe rahe");
+                }
+                console.log("End of ladder");
+                */
+
+
+//8. Loops in JavaScript : in js also three types of loops are present i.e. for, while, do-while ; 
+                var arr = [1, 2, 3, 4, 5, 6, 7]; // console.log(arr);
+               
+               //a. for loop method 
+                            // for(var i=0;i<arr.length;i++){
+                            //     if(i==2){
+                            //         // break;
+                            //         continue;
+                            //     }
+                            //     console.log(arr[i])
+                            // }
+
+                    //a.A). this is the other way to iterat the array in js
+                            arr.forEach(function(element){ 
+                            //     console.log(element);
+                            // })
+
+                    //a.B). Defining the constt value in the js
+                            // const ac = 0;
+                            // ac++;
+                            // ac = ac +1;  // o/p it thorugh the error 
+
+                //b. while loop 
+                          // let j = 0;
+                          // while(j<arr.length){
+                          //     console.log(arr[j]);
+                          //     j ++;
+                          // }
+
+               // c. do - while loop
+                          // do{
+                          //     console.log(arr[j]);
+                          //     j++;
+                          // } while (j < arr.length);
+
+
+
+//9. String Methods in JavaScript
+          let myLovelyString = "Harry is a good boy good good Harry";
+          //Deferent mathods used in the string are as:
+                  // console.log(myLovelyString.length)
+                  // console.log(myLovelyString.indexOf("good"))  //Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.
+                  // console.log(myLovelyString.lastIndexOf("good")) //Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.
+                  // console.log(myLovelyString.slice(1,4)) //Extracts a section of a string and returns a new string.
+                  d = myLovelyString.replace("Harry", "Rohan");  //Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.
+                  // d = d.replace("good", "bad");
+                  // console.log(d, myLovelyString)
+
+
+
+let myDate = new Date();
+// console.log(myDate.getTime());
+// console.log(myDate.getFullYear());
+// console.log(myDate.getDay());
+// console.log(myDate.getMinutes());
+// console.log(myDate.getHours());
+ 
+// DOM Manipulation
+let elem = document.getElementById('click');
+// console.log(elem);
+
+let elemClass = document.getElementsByClassName("container")
+// console.log(elemClass);
+// elemClass[0].style.background = "yellow";
+elemClass[0].classList.add("bg-primary")
+elemClass[0].classList.add("text-success")
+// console.log(elem.innerHTML);
+// console.log(elem.innerText); 
+
+// console.log(elemClass[0].innerHTML);
+// console.log(elemClass[0].innerText); 
+tn = document.getElementsByTagName('div')
+// console.log(tn)
+createdElement = document.createElement('p');
+createdElement.innerText = "This is a created para";
+tn[0].appendChild(createdElement);
+createdElement2 = document.createElement('b');
+createdElement2.innerText = "This is a created bold";
+tn[0].replaceChild(createdElement2, createdElement);
+// removeChild(element); ---> removes an element
+ 
+// Selecting using Query
+// sel = document.querySelector('.container')
+// console.log(sel)
+// sel = document.querySelectorAll('.container')
+// console.log(sel)
+
+// function clicked(){
+//     console.log('The button was clicked')
+// }
+// window.onload = function(){
+//     console.log('The document was loaded')
+
+// }
+// Events in JavaScript
+// firstContainer.addEventListener('click', function(){
+//     document.querySelectorAll('.container')[1].innerHTML = "<b> We have clicked</b>"
+//     console.log("Clicked on Container")
+// })
+
+// firstContainer.addEventListener('mouseover', function(){
+//     console.log("Mouse on Container")
+// })
+
+// firstContainer.addEventListener('mouseout', function(){
+//     console.log("Mouse out of Container");
+// })
+
+// let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
+// firstContainer.addEventListener('mouseup', function(){
+//     document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+//     console.log("Mouse up when clicked on Container");
+// })
+
+// firstContainer.addEventListener('mousedown', function(){
+//     document.querySelectorAll('.container')[1].innerHTML = "<b> We have clicked</b>"
+//     console.log("Mouse down when clicked on Container");
+// })
+
+
+// Arrow Functions
+// function summ(a, b){
+//     return a+b;
+// }
+summ = (a,b)=>{
+    return a+b;
+}
+
+logKaro = ()=>{
+    document.querySelectorAll('.container')[1].innerHTML = "<b> Set interval fired</b>"
+    console.log("I am your log")
+}
+// SetTimeout and setinterval
+// clr = setTimeout(logKaro, 5000);
+// clr = setInterval(logKaro, 2000);
+// use clearInterval(clr)/clearTimeout(clr) to cancel setInterval/setTimeout
+
+// JavaScript localStorage
+// localStorage.setItem('name', 'harry') 
+// localStorage 
+// localStorage.getItem('name')
+// localStorage.removeItem('name')
+// localStorage.clear();
+
+// Json 
+// obj = {name: "harry", length: 1, a: {this: 'tha"t'}}
+// jso = JSON.stringify(obj);
+// console.log(typeof jso)
+// console.log(jso)
+// parsed = JSON.parse(`{"name":"harry","length":1,"a":{"this":"that"}}`)
+// console.log(parsed);
+
+// Template literals - Backticks
+a = 34;
+console.log(`this is my ${a}`)
