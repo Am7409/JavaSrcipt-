@@ -1,3 +1,29 @@
+// Writing into an HTML element, using innerHTML. this is useful for writting the results to elements as html
+                            // HTml part :-   <p id="demo"></p>
+                            // Java script part :- document.getElementById("demo").innerHTML = 5 + 6;
+                                                    // This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
+
+// Writing into the HTML output using document.write(). : -  useful for the output to the broweser screen 
+           // document.write("some statement")
+
+
+// Writing into an alert box, using window.alert(). useful for the making the alert in  the screen 
+        // window.alert("some alert") or we can write this as alert('some alert') also both are the same thing 
+        //important note : You can skip the window keyword.  In JavaScript, the window object is the global scope object, that means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional:
+
+
+// Writing into the browser console, using console.log(). :- useful for the writing the output to the console
+      // console.log("Hello world");
+
+// javascript print : this useful  for the The only exception is that you can call the "window.print()" method in the browser to print the content of the current window.
+      // <button onclick="window.print()">Print this page</button>
+      // this can print the current page of the web browser page 
+
+
+let nam ='Hello'
+let na="World"
+console.log(nam ,na);
+
 // 1. Ways to print in JavaScript
 // console.log("Hello World");
 // alert("me");
@@ -38,18 +64,18 @@ commment
           shubham: 78,
           harry: 99.977
       }
-      // console.log(marks);
+      // console.log(marks); it prints all the member objects in the given object
 
       // d: Booleans
       var a = true;
       var b = false;
       // console.log(a, b);
 
-      // var und = undefined;
-      var und;
+      //e: var und = undefined;
+      var und;   // by default the value of the variable is undefined if the value is not assigened to the varible 
       // console.log(und);
 
-      var n = null;
+      var n = null; // it is differnet from the undifiend by saying that the devloper wants to not givning the value to the variables by assign it the "null" keyword
       // console.log(n);
       
       
