@@ -231,7 +231,7 @@ At a very high level, there are two types of data types in JavaScript
                           // } while (j < arr.length);
 
 
-
+    
 //9. String Methods in JavaScript
           let myLovelyString = "Harry is a good boy good good Harry";
           //Deferent mathods used in the string are as:
@@ -244,13 +244,16 @@ At a very high level, there are two types of data types in JavaScript
                   // console.log(d, myLovelyString)
 
 
-
-let myDate = new Date();
-// console.log(myDate.getTime());
-// console.log(myDate.getFullYear());
-// console.log(myDate.getDay());
-// console.log(myDate.getMinutes());
-// console.log(myDate.getHours());
+//10. Date in the javascript 
+    // The ways you cn write the date in the javascript 
+                let myDate = new Date();
+                // console.log(myDate.getTime());
+                // console.log(myDate.getFullYear());
+                // console.log(myDate.getDay());
+                // console.log(myDate.getMinutes());
+                // console.log(myDate.getHours());
+ 
+ 
  
 // DOM Manipulation
 let elem = document.getElementById('click');
