@@ -237,25 +237,29 @@ At a very high level, there are two types of data types in JavaScript
           //Deferent mathods used in the string are as:
                   // console.log(myLovelyString.length)
                   // console.log(myLovelyString.indexOf("good"))  //Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.
-                  // console.log(myLovelyString.lastIndexOf("good")) //Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.
+                                                                  // It is used to search the first accure of the string in the given string and return the its fisrt index of the string if found otherwise -1.
+                 // console.log(myLovelyString.lastIndexOf("good")) //Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.
+                                                                    // It is used to search the last accure of the string in the given string and return the its fisrt index of the string if found otherwise -1.
                   // console.log(myLovelyString.slice(1,4)) //Extracts a section of a string and returns a new string.
                   d = myLovelyString.replace("Harry", "Rohan");  //Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.
-                  // d = d.replace("good", "bad");
+                                                                 //It just repalce the first accurance of the string it found in the stirng
+                 // d = d.replace("good", "bad");
                   // console.log(d, myLovelyString)
 
 
-//10. Date in the javascript 
-    // The ways you cn write the date in the javascript 
+//10. Date in the javascript  
+    // The ways you cn write the date in the javascript (please make sure you use the correct case because the js case sensitive language)
                 let myDate = new Date();
-                // console.log(myDate.getTime());
-                // console.log(myDate.getFullYear());
-                // console.log(myDate.getDay());
-                // console.log(myDate.getMinutes());
-                // console.log(myDate.getHours());
+                    // deiffernts methods of writting the time in the js
+                          // console.log(myDate.getTime()); // this is used to write the time in the seconds 
+                          // console.log(myDate.getFullYear());  // it displays the year
+                          // console.log(myDate.getDay());   // it dispalys the day in number according to the week  and in this the starts from sunday and in numeric it reprsent as "0" and further on 
+                          // console.log(myDate.getMinutes());  // it displays the time in minutes
+                          // console.log(myDate.getHours());
+
+
  
- 
- 
-// DOM Manipulation
+//11.  DOM Manipulation   (DOM is document object modle) 
 let elem = document.getElementById('click');
 // console.log(elem);
 
